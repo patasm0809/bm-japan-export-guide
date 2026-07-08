@@ -57,6 +57,7 @@
     margin: 0; background: var(--bg); color: var(--ink);
     font-family: var(--sans); line-height: 1.65; letter-spacing: -0.005em;
     -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    word-break: keep-all; overflow-wrap: break-word; text-wrap: pretty;
   }
   .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px 96px; }
 
@@ -64,7 +65,7 @@
   .i18n { display: none; }
   html[data-lang="ko"] .i18n[data-l="ko"] { display: contents; }
   html[data-lang="ja"] .i18n[data-l="ja"] { display: contents; }
-  html[lang="ja"] body { letter-spacing: 0; }
+  html[lang="ja"] body { letter-spacing: 0; word-break: normal; line-break: normal; }
 
   /* ---------- top bar ---------- */
   .topbar { display: flex; justify-content: flex-end; align-items: center; padding: 18px 0 0; }
